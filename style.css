@@ -55,3 +55,29 @@ h2 {
         transform: scale3D(0, 0, 1);
     }
 }
+.dots {
+    position: relative;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: transparent;
+    color: transparent;
+    box-shadow:
+        0 20px 0 0 #ebebeb,
+        20px 0 0 0 #ebebeb,
+        0 -20px 0 0  #ebebeb,
+        -20px 0 0 0  #ebebeb;
+    margin: 20px auto;
+    animation: dots-rotate-360 1.3s infinite ease-in-out;
+}
+.dots-wrap {
+    padding: 20px;
+}
+@keyframes dots-rotate-360 {
+    0% {
+        transform: rotate( 0deg );
+    }
+    100% {
+        transform: rotate( 360deg );
+    }
+}
